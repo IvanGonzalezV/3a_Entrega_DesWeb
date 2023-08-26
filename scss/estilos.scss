@@ -5,6 +5,12 @@
     list-style: none;
 }
 
+body {
+    overflow: hidden;
+}
+
+// seccion del NAV
+
 #navp-box {
     background-color: black;
         img {
@@ -52,9 +58,86 @@
 
 
 
-.base {
+#base-box {
+    background: linear-gradient(rgba(73, 95, 150, 0.75), rgba(73, 95, 150, 0.75)), url(/Imagenes/Japanese_Pattern_8.webp);
+    margin-left: 120px;
+    margin-right: 120px;
+    padding-top: 35px;
+    padding-bottom: 70px;
+        h1 {
+            font-size: 30px;
+            margin-left: 61px;
+        }
+}
+
+.renglon {
+    padding: 16px;
+}
+
+span {
+    color: white;
+}
+
+// Comienza la Seccion del Header
+
+.headrh-a-box {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 28px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    img {
+        border: 2px solid black;
+        transition: transform 0.3s ease;
+    }
+    img:hover {
+        transform: scale(1.1);
+    }
+}
+
+// .resize {
+//     width: 188px;
+// }
+
+.headrimg-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     border: solid 2px black;
-    background: linear-gradient(rgba(73, 95, 150, 0.75),rgba(73, 95, 150, 0.75)), url(/Imagenes/Japanese_Pattern_8.webp);
+    width: 1700px;
+    height: 600px;
+    background-color: rgba(119, 136, 153, 0.473);
+    img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .headrh-a-box {
+        flex-direction: column;
+        text-align: center; 
+        font-size: 20px;
+        
+        h2 {
+            margin-bottom: 10px;
+        }
+        
+        a {
+            margin-top: 10px; 
+        }
+    }
+    
+    .headrimg-box {
+        width: 100%; 
+        height: auto;
+        
+        img {
+            width: 100%;
+        }
+    }
 }

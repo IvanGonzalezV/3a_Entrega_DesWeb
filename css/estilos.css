@@ -5,6 +5,10 @@
   list-style: none;
 }
 
+body {
+  overflow: hidden;
+}
+
 #navp-box {
   background-color: black;
 }
@@ -49,11 +53,78 @@
     color: red;
   }
 }
-.base {
+#base-box {
+  background: linear-gradient(rgba(73, 95, 150, 0.75), rgba(73, 95, 150, 0.75)), url(/Imagenes/Japanese_Pattern_8.webp);
+  margin-left: 120px;
+  margin-right: 120px;
+  padding-top: 35px;
+  padding-bottom: 70px;
+}
+#base-box h1 {
+  font-size: 30px;
+  margin-left: 61px;
+}
+
+.renglon {
+  padding: 16px;
+}
+
+span {
+  color: white;
+}
+
+.headrh-a-box {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 28px;
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+.headrh-a-box img {
+  border: 2px solid black;
+  transition: transform 0.3s ease;
+}
+.headrh-a-box img:hover {
+  transform: scale(1.1);
+}
+
+.headrimg-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
   border: solid 2px black;
-  background: linear-gradient(rgba(73, 95, 150, 0.75), rgba(73, 95, 150, 0.75)), url(/Imagenes/Japanese_Pattern_8.webp);
+  width: 1700px;
+  height: 600px;
+  background-color: rgba(119, 136, 153, 0.473);
+}
+.headrimg-box img {
+  width: 350px;
+}
+
+@media (max-width: 768px) {
+  .headrh-a-box {
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+  }
+  .headrh-a-box h2 {
+    margin-bottom: 10px;
+  }
+  .headrh-a-box a {
+    margin-top: 10px;
+  }
+  .headrimg-box {
+    width: 100%;
+    height: auto;
+  }
+  .headrimg-box img {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
