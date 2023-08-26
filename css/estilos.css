@@ -220,4 +220,34 @@ header {
   margin: 20px;
 }
 
+#ftrp-box {
+  background-color: rgba(0, 0, 0, 0.692);
+}
+#ftrp-box img {
+  width: 100px;
+  margin: 16px 16px;
+  background-color: white;
+}
+
+.ftrh-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 26px;
+  gap: 96px;
+}
+.ftrh-box i {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: transform 0.6s;
+}
+.ftrh-box i:hover {
+  color: lightseagreen;
+  transform: scale(1.1);
+}
+
 /*# sourceMappingURL=estilos.css.map */
