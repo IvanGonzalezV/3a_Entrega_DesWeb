@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -6,7 +7,16 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
+  background-image: linear-gradient(to bottom right, rgba(15, 69, 141, 0.555), rgba(54, 54, 54, 0.8549019608), rgba(15, 69, 141, 0.555));
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: top 0.3s ease;
 }
 
 #navp-box {
@@ -73,6 +83,10 @@ span {
   color: white;
 }
 
+header {
+  margin-top: 101px;
+}
+
 .headrh-a-box {
   display: flex;
   flex-direction: row;
@@ -85,7 +99,8 @@ span {
 }
 .headrh-a-box img {
   border: 2px solid black;
-  transition: transform 0.3s ease;
+  transition: transform 0.6s ease;
+  width: 100%;
 }
 .headrh-a-box img:hover {
   transform: scale(1.1);
@@ -100,7 +115,7 @@ span {
   border: solid 2px black;
   width: 1700px;
   height: 600px;
-  background-color: rgba(119, 136, 153, 0.473);
+  background-color: rgba(0, 0, 0, 0.486);
 }
 .headrimg-box img {
   width: 350px;
@@ -125,6 +140,84 @@ span {
   .headrimg-box img {
     width: 100%;
   }
+}
+.hmain-box {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.hmain-box2 {
+  text-align: justify;
+  font-size: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.tabla {
+  display: table;
+  width: auto;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin: auto;
+}
+
+.tabla-fila {
+  display: table-row;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: white;
+}
+
+.tabla-celda {
+  display: table-cell;
+  padding: 8px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hmain-box {
+    font-size: 24px; /* Reducir tamaño del título */
+  }
+  .tabla {
+    display: block; /* Cambia a bloque para apilar las celdas */
+    width: 100%; /* Asegura que la tabla ocupe todo el ancho disponible */
+    margin: 0; /* Elimina el margen horizontal */
+  }
+  .tabla-fila {
+    font-size: 24px; /* Reducir tamaño del texto de las filas */
+    display: flex; /* Cambia a flex para alinear elementos horizontalmente */
+    justify-content: space-between; /* Espacio entre elementos */
+    margin-bottom: 10px; /* Agrega espacio entre filas */
+    background-color: white;
+    padding: 8px;
+  }
+  .tabla-celda {
+    font-size: 18px; /* Reducir tamaño del texto en las celdas */
+    border: 1px solid black;
+    text-align: center;
+  }
+}
+.pmain2-box {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.headrh-a-boxb {
+  display: grid;
+  grid-template-columns: repeat(3, 16.6666666667%);
+  justify-content: center;
+  align-content: center;
+}
+.headrh-a-boxb iframe {
+  width: 75%;
+  height: auto;
+  border: none;
+  margin: 20px;
 }
 
 /*# sourceMappingURL=estilos.css.map */

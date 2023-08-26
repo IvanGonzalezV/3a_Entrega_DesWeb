@@ -6,10 +6,22 @@
 }
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
+    // background-image: linear-gradient(to bottom right, #dad4d4, #363636da, #dad4d4);
+    // background-image: linear-gradient(to bottom right, rgba(32, 178, 171, 0.555), #363636da, rgba(32, 178, 171, 0.555));
+    // background-image: linear-gradient(to bottom right, rgba(32, 95, 178, 0.555), #363636da, rgba(32, 95, 178, 0.555));
+    background-image: linear-gradient(to bottom right, rgba(15, 69, 141, 0.555), #363636da, rgba(15, 69, 141, 0.555));
 }
 
 // seccion del NAV
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: top 0.3s ease;
+}
 
 #navp-box {
     background-color: black;
@@ -80,6 +92,10 @@ span {
 
 // Comienza la Seccion del Header
 
+header {
+    margin-top: 101px;
+}
+
 .headrh-a-box {
     display: flex;
     flex-direction: row;
@@ -91,16 +107,13 @@ span {
     margin-bottom: 55px;
     img {
         border: 2px solid black;
-        transition: transform 0.3s ease;
+        transition: transform 0.6s ease;
+        width: 100%;
     }
     img:hover {
         transform: scale(1.1);
     }
 }
-
-// .resize {
-//     width: 188px;
-// }
 
 .headrimg-box {
     display: flex;
@@ -111,7 +124,7 @@ span {
     border: solid 2px black;
     width: 1700px;
     height: 600px;
-    background-color: rgba(119, 136, 153, 0.473);
+    background-color: rgba(0, 0, 0, 0.486);
     img {
         width: 350px;
     }
@@ -141,3 +154,92 @@ span {
         }
     }
 }
+
+// Comienza seccion del main
+
+.hmain-box {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.hmain-box2 {
+    text-align: justify;
+    font-size: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.tabla {
+    display: table;
+    width: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin: auto;
+}
+
+.tabla-fila {
+    display: table-row;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.tabla-celda {
+    display: table-cell;
+    padding: 8px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .hmain-box {
+        font-size: 24px; /* Reducir tamaño del título */
+    }
+
+    .tabla {
+        display: block; /* Cambia a bloque para apilar las celdas */
+        width: 100%; /* Asegura que la tabla ocupe todo el ancho disponible */
+        margin: 0; /* Elimina el margen horizontal */
+    }
+
+    .tabla-fila {
+        font-size: 24px; /* Reducir tamaño del texto de las filas */
+        display: flex; /* Cambia a flex para alinear elementos horizontalmente */
+        justify-content: space-between; /* Espacio entre elementos */
+        margin-bottom: 10px; /* Agrega espacio entre filas */
+        background-color: white;
+        padding: 8px;
+    }
+
+    .tabla-celda {
+        font-size: 18px; /* Reducir tamaño del texto en las celdas */
+        border: 1px solid black;
+        text-align: center;
+    }
+}
+
+.pmain2-box {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.headrh-a-boxb {
+    display: grid;
+    grid-template-columns: repeat(3, calc(100% / 6));
+    justify-content: center;
+    align-content: center;
+    iframe {
+        width: 75%;
+        height: auto;
+        border: none;
+        margin: 20px;
+        
+    }
+}
+
+// De aqui inicia seccion del footer
+
