@@ -232,12 +232,15 @@ header {
     grid-template-columns: repeat(3, calc(100% / 6));
     justify-content: center;
     align-content: center;
-    iframe {
-        width: 75%;
-        height: auto;
-        border: none;
-        margin: 20px;
-        
+        iframe {
+            width: 75%;
+            height: auto;
+            border: none;
+            margin: 20px;
+            transition: transform 0.5s ease;
+                &:hover {
+                    transform: scale(1.2);
+                }
     }
 }
 
