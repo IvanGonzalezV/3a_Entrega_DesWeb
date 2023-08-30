@@ -195,26 +195,26 @@ header {
 
 @media (max-width: 768px) {
     .hmain-box {
-        font-size: 24px; /* Reducir tamaño del título */
+        font-size: 24px; 
     }
 
     .tabla {
-        display: block; /* Cambia a bloque para apilar las celdas */
-        width: 100%; /* Asegura que la tabla ocupe todo el ancho disponible */
-        margin: 0; /* Elimina el margen horizontal */
+        display: block; 
+        width: 100%; 
+        margin: 0; 
     }
 
     .tabla-fila {
-        font-size: 24px; /* Reducir tamaño del texto de las filas */
-        display: flex; /* Cambia a flex para alinear elementos horizontalmente */
-        justify-content: space-between; /* Espacio entre elementos */
-        margin-bottom: 10px; /* Agrega espacio entre filas */
+        font-size: 24px; 
+        display: flex; 
+        justify-content: space-between;
+        margin-bottom: 10px;
         background-color: white;
         padding: 8px;
     }
 
     .tabla-celda {
-        font-size: 18px; /* Reducir tamaño del texto en las celdas */
+        font-size: 18px; 
         border: 1px solid black;
         text-align: center;
     }
@@ -273,5 +273,67 @@ header {
                     color: lightseagreen;
                     transform: scale(1.1);
                 }
+        }
+}
+
+// Aqui inicia bootstrap
+
+.container-md {
+    background: linear-gradient(rgba(73, 95, 150, 0.75), rgba(73, 95, 150, 0.75)), url(/Imagenes/Japanese_Pattern_8.webp);
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.container-mdh {
+    display: flex;
+    flex-direction: column;
+            h1 {
+                margin-left: 61px;
+                margin-top: 35px;
+                margin-right: 61px;
+                margin-bottom: 35px;
+                text-align: center;
+                font-size: 37px;
+        }
+}
+
+.imgclases-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 61px;
+    img {
+        width: 650px;
+    }
+}
+
+@media (max-width: 888px) {
+    .imgclases-box img {
+        width: 100%; /* Cambiar el ancho de la imagen al 100% */
+        max-width: 650px; /* Establecer un ancho máximo para mantener la proporción */
+    }
+}
+
+.container-mdh h2 {
+        margin-left: 61px;
+        margin-bottom: 40px;
+        font-size: 28px;
+}
+
+.container-md2 {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.container-md2 {
+    display: flex;
+    flex-direction: column;
+            h2 {
+                margin-left: 61px;
+                margin-top: 35px;
+                margin-right: 61px;
+                margin-bottom: 45px;
+                text-align: center;
+                font-size: 31px;
         }
 }
