@@ -309,8 +309,98 @@ header {
   margin-top: 35px;
   margin-right: 61px;
   margin-bottom: 45px;
-  text-align: center;
+  text-align: justify;
   font-size: 31px;
+}
+
+.container-md__img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  gap: 25px;
+}
+.container-md__img img {
+  width: 650px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.containr-tecnicas {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: justify;
+}
+.containr-tecnicas h2 {
+  margin-left: 61px;
+  margin-top: 35px;
+  margin-right: 61px;
+  margin-bottom: 35px;
+  font-size: 31px;
+}
+
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 95%;
+  margin: 25px auto;
+}
+.table th,
+.table td {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 2px;
+  text-align: justify;
+  vertical-align: auto;
+  border-bottom: 1px solid white;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 30px;
+}
+.form-box legend, .form-box label {
+  font-weight: bold;
+  color: greenyellow;
+}
+.form-box img.img-center {
+  width: 150px;
+  display: block;
+  margin: 25px auto;
+}
+.form-box fieldset {
+  margin-top: 20px;
+  padding: 20px;
+  border: solid 1px #ccc;
+}
+.form-box button {
+  background-color: greenyellow;
+  transition: transform 0.3s, background-color 0.3s;
+}
+.form-box button:hover {
+  transform: scale(1.05);
+  background-color: orangered;
+}
+
+.ancho-personalizado {
+  width: 500px;
+}
+
+.h2-form {
+  text-align: center;
+  padding: 25px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
