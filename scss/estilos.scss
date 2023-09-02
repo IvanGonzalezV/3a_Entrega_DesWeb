@@ -469,8 +469,17 @@ header {
             transform: translateY(-50%);
             white-space: nowrap;
             animation: slide 15s linear infinite;
+            color: darkred;
+            font-size: 50px;
+            font-weight: bold;
         }
     }
+}
+
+.color-1 {
+    font-size: 51px;
+    text-align: left;
+    color: chartreuse;
 }
 
 @keyframes slide {
@@ -481,3 +490,4 @@ header {
         transform: translateX(-100%);
     }
 }
+
