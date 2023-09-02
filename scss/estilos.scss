@@ -1,4 +1,4 @@
-*, *:before, *:after {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -309,8 +309,8 @@ header {
 
 @media (max-width: 888px) {
     .imgclases-box img {
-        width: 100%; /* Cambiar el ancho de la imagen al 100% */
-        max-width: 650px; /* Establecer un ancho máximo para mantener la proporción */
+        width: 100%; 
+        max-width: 650px; 
     }
 }
 
@@ -437,3 +437,47 @@ header {
 }
 
 
+// Comienza seccion de pagina Eventos
+
+#cuadri-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding: 52px;
+    gap: 25px;
+    font-size: 50px;
+    background-image: linear-gradient(to bottom right, rgba(15, 69, 141, 0.555), #363636da, rgba(15, 69, 141, 0.555));
+    
+    .cuadri-hbox {
+        position: relative;
+        width: auto;
+        height: 300px;
+        border: solid 2px black;
+        text-align: center;
+        background: linear-gradient(rgba(73, 95, 150, 0.75), rgba(73, 95, 150, 0.75)), url(/Imagenes/Japanese_Pattern_8.webp);
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 24px;
+        
+        &::before {
+            content: attr(data-text); /* Muestra el texto original */
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            transform: translateY(-50%);
+            white-space: nowrap;
+            animation: slide 15s linear infinite;
+        }
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

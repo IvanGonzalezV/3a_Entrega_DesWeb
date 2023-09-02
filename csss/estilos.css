@@ -422,6 +422,7 @@ header {
   background: linear-gradient(rgba(73, 95, 150, 0.75), rgba(73, 95, 150, 0.75)), url(/Imagenes/Japanese_Pattern_8.webp);
   white-space: nowrap;
   overflow: hidden;
+  font-size: 24px;
 }
 #cuadri-box .cuadri-hbox::before {
   content: attr(data-text); /* Muestra el texto original */
@@ -440,9 +441,6 @@ header {
   100% {
     transform: translateX(-100%);
   }
-}
-.color-1 {
-  color: white;
 }
 
 /*# sourceMappingURL=estilos.css.map */
