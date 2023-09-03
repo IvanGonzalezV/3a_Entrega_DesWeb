@@ -599,21 +599,21 @@ header {
     margin-left: auto;
   }
   
-  /* Media query para pantallas de 768px o menos */
+  
   @media screen and (max-width: 768px) {
     #bannr-izq {
-      width: 100%; /* Ocupa todo el ancho en pantallas más pequeñas */
-      justify-content: center; /* Centra el contenido horizontalmente */
-      text-align: center; /* Alinea el texto al centro */
+      width: 100%;
+      justify-content: center; 
+      text-align: center;
     }
   
     #bannr-der {
-      width: 100%; /* Ocupa todo el ancho en pantallas más pequeñas */
-      justify-content: center; /* Centra el contenido horizontalmente */
-      text-align: center; /* Alinea el texto al centro */
+      width: 100%;
+      justify-content: center; 
+      text-align: center; 
     }
   
-    /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    
     #bannr-izq h2,
     #bannr-der h2 {
       font-size: 120%;
@@ -636,13 +636,13 @@ header {
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    animation: scroll 40s linear infinite; /* Ajusta la duración y velocidad de desplazamiento aquí */
+    animation: scroll 40s linear infinite; 
     animation-delay: 0s;
   }
   
   .image-container img {
-    width: 200px; /* Asegúrate de que las imágenes ocupen todo el ancho */
-    margin-right: 20px; /* Espacio entre las imágenes (ajusta según sea necesario) */
+    width: 200px; 
+    margin-right: 20px; 
   }
   
   @keyframes scroll {
@@ -650,21 +650,21 @@ header {
       transform: translateX(0%);
     }
     100% {
-      transform: translateX(-100%); /* Desplazamiento completo hacia la izquierda */
+      transform: translateX(-100%); 
     }
   }
 
   @media screen and (max-width: 768px) {
     .image-container {
-      animation: none; /* Detener la animación en pantallas más pequeñas */
+      animation: none; 
     }
   
     .image-container img {
-      width: 100px; /* Ajusta el tamaño de las imágenes para pantallas más pequeñas */
-      margin-right: 10px; /* Espacio entre las imágenes para pantallas más pequeñas */
+      width: 100px; 
+      margin-right: 10px; 
     }
   
-    /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+    
     .image-container h2 {
       font-size: 120%;
     }
